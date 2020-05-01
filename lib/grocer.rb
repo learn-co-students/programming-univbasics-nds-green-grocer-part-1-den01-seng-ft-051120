@@ -31,7 +31,7 @@ def consolidate_cart(cart)
       consolodated_cart[find_item_index(item[:item], consolodated_cart)][:count] += 1
       next
     end
-    # else add item to cart and create count in item dict
+    # else add item to consolodated cart and create count in item hash
     count_item = item
     count_item[:count] = 1
     consolodated_cart << count_item
